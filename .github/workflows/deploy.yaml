@@ -20,7 +20,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           application_name: frontend
-          environment_name: Frontend-env
+          environment_name: Frontend-env-1
           existing_bucket_name: elasticbeanstalk-ap-southeast-2-730335431245
           region: ap-southeast-2
           version_label: ${{ github.sha }}
