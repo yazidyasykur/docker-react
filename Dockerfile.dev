@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FROM node:lts-alpine
 
 WORKDIR '/app'
@@ -8,3 +9,15 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "run", "start"]
+=======
+FROM node:lts-alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
+>>>>>>> 5f44ff8 (inital commit)
